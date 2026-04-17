@@ -45,8 +45,8 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: pendingData.fullName,
-          from_email: pendingData.email,
+          name: pendingData.fullName,
+          email: pendingData.email,
           phone: pendingData.phone,
           subject: pendingData.subject,
           message: pendingData.message,
@@ -148,7 +148,7 @@ const Contact = () => {
                   label="Full Name" 
                   register={register("fullName", { required: "Name is required" })}
                   error={errors.fullName}
-                  placeholder="Juvinary James"
+                  placeholder="E.g Juvinary James"
                 />
                 <InputGroup 
                   label="Email Address" 
@@ -158,7 +158,7 @@ const Contact = () => {
                     pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" }
                   })}
                   error={errors.email}
-                  placeholder="james@example.com"
+                  placeholder="E.g james@example.com"
                 />
               </div>
 
@@ -172,7 +172,7 @@ const Contact = () => {
                   label="Subject" 
                   register={register("subject", { required: "Please select a topic" })}
                   error={errors.subject}
-                  placeholder="Solar Installation"
+                  placeholder="E.g Solar Installation"
                 />
               </div>
 

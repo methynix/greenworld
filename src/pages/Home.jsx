@@ -27,12 +27,9 @@ const IMAGES = {
 };
 
 const SERVICES = [
-  { title: "Renewable Energy", img: IMAGES.energy, icon: HiOutlineLightningBolt, color: "bg-gw-sun", desc: "Solar farms, Hybrid ESS, and Peaceful Nuclear consultancy (Obj 3.4)." },
-  { title: "Water Engineering", img: IMAGES.water, icon: GiWaterDrop, color: "bg-gw-sky", desc: "Borehole drilling (Obj 3.11), Desalination, and Purification systems." },
-  { title: "Construction", img: IMAGES.const, icon: GiDrill, color: "bg-slate-700", desc: "Developing dams, roads, bridges, and commercial infrastructure (Obj 3.2)." },
-  { title: "Smart Agriculture", img: IMAGES.agri, icon: GiGreenhouse, color: "bg-gw-leaf", desc: "Climate-smart farming inputs, fertilizers, and equipment (Obj 3.9)." },
-  { title: "Global Logistics", img: IMAGES.logistics, icon: GiTruck, color: "bg-orange-500", desc: "Fleet management, clearing, forwarding, and warehousing (Obj 3.10)." },
-  { title: "Technical Advisory", img: IMAGES.hq, icon: HiOutlineGlobeAlt, color: "bg-gw-forest", desc: "Feasibility studies, carbon credit projects, and energy audits." },
+  { title: "Renewable Energy", img: IMAGES.energy, icon: HiOutlineLightningBolt, color: "bg-gw-sun", desc: "C&I Solar infrastructure and high-tier advisory." },
+  { title: "Water Solutions", img: IMAGES.water, icon: GiWaterDrop, color: "bg-gw-sky", desc: "Drilling, Reverse Osmosis, and purification engineering." },
+  { title: "EPC Services", img: IMAGES.const, icon: GiDrill, color: "bg-slate-700", desc: "Full-cycle industrial design, procurement and construction." },
 ];
 
 const Home = () => {
@@ -133,7 +130,7 @@ const Home = () => {
       </Section>
 
       {/* 3. CENTERED SERVICES SECTION */}
-      <Section className="bg-gw-forest rounded-[5rem] mx-4 md:mx-10 my-20 py-24 text-white">
+      <Section id="solutions-hub" className="bg-gw-forest rounded-[5rem] mx-4 md:mx-10 my-20 py-24 text-white">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-gw-sun font-bold tracking-widest uppercase text-xs">Our Ecosystem</span>
           <h2 className="text-5xl font-serif mt-4 mb-6">Utility-Scale Engineering</h2>
